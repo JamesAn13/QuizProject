@@ -1,6 +1,6 @@
 import "./exam.css";
 import Swal from "sweetalert2";
-import examimage from '../logo192.png';
+import examimage from '../example.png';
 import {ScoreContext} from '../App.js';
 import {Link} from 'react-router-dom';
 /**
@@ -323,7 +323,7 @@ export default function ExamWorkSpace(props) {
     useEffect(() => {
         if (isSuccess) {
             console.log('성공!!');
-            setScore(prevScore => prevScore + 1);
+            setScore(prevScore => prevScore + 100);
         }
     }, [isSuccess]);
     
@@ -337,7 +337,7 @@ export default function ExamWorkSpace(props) {
         <canvas ref={examCvsRef} width={400} height={400} className={'workspace exam-workspace'}></canvas>
         <canvas ref={writeCvsRef} width={400} height={400} className={'workspace write-workspace'}></canvas>
     </div>
-    <Link to={'/page2'}>2번</Link>
+    <Link to={'/page2'}  className="link-button" >다음 페이지</Link>
     </div>
     ); 
     

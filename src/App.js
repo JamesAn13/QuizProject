@@ -6,7 +6,7 @@ import ShowUserName from './exam/ShowUserName';
 import ScoreDisplay from './exam/ScoreDisplay';
 import Page1 from '../src/exam/ExamWorkSpace';
 import { Route, Routes } from 'react-router-dom';
-import Page2 from '../src/exam/page2';
+import Page2 from '../src/Page2/ProblemForm';
 export const ScoreContext = createContext(0);
 
 function App() {
@@ -22,7 +22,7 @@ const [score,setScore] = useState(0);
       <ScoreDisplay/>
       <Routes>
         <Route path='/' element={<Page1 exam={exam}/>} />
-        <Route path='/' element={<Page2 />} />
+        <Route path='/page2' element={<Page2 />} />
       </Routes>
       </div>
     </div>
