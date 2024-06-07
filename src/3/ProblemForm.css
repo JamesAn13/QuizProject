@@ -59,3 +59,14 @@
 .confirm-button:hover {
   background-color: #0056b3;
 }
+
+.link-button {
+  display: inline-block; /* 또는 block */
+  padding: 10px 20px;
+  background-color: #007bff; /* 원하는 배경색 */
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px; /* 둥근 모서리 */
+  cursor: pointer; /* 마우스 커서를 포인터로 변경 */
+}

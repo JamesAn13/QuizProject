@@ -77,6 +77,7 @@ const ProblemForm = () => {
   };
 
   return (
+    <div>
     <div className="problem-form">
       <h1>다음 속담의 틀린 부분을 바르게 고친 후 따라 읽어 보세요 (1~5)</h1>
       {problemsSet.map((problem, index) => (
@@ -91,6 +92,11 @@ const ProblemForm = () => {
         </div>
       ))}
       <button className="confirm-button" onClick={handleConfirm}>Confirm</button>
+    </div>
+    <Link to={'/page2'}  className="link-button" >이전 문제</Link>
+
+    <Link to={'/page4'}  className="link-button" >다음 문제</Link>
+
     </div>
   );
 };

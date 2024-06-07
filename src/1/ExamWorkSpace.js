@@ -337,7 +337,7 @@ export default function ExamWorkSpace(props) {
         <canvas ref={examCvsRef} width={400} height={400} className={'workspace exam-workspace'}></canvas>
         <canvas ref={writeCvsRef} width={400} height={400} className={'workspace write-workspace'}></canvas>
     </div>
-    <Link to={'/page2'}  className="link-button" >다음 페이지</Link>
+    <Link to={'/page2'}  className="link-button" >다음 문제</Link>
     </div>
     ); 
     

@@ -1,0 +1,74 @@
+.Quiz28 {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  .grid {
+    display: inline-block;
+    margin: 20px auto;
+    user-select: none;
+  }
+  
+  .row {
+    display: flex;
+  }
+  
+  .cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .cell.selected {
+    border: 2px solid red;
+  }
+  
+  .word-list {
+    margin: 20px;
+    padding-left: 120px;
+    display: inline-block;
+  }
+  
+  .word-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .word-list li {
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .word-list li.found {
+    text-decoration: underline;
+    color: green;
+  }
+.selected {
+    background-color: yellow;
+  }
+  
+  .found {
+    text-decoration: underline;
+  }
+  
+  .matched {
+    border: 2px solid blue;
+  }
+  .timer {
+    margin-bottom: 20px;
+}
+
+.timer h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.timer p {
+    font-size: 20px;
+    margin: 0;
+}
+  

@@ -1,18 +1,23 @@
 import React, { useState, createContext, useContext } from 'react';
 import './App.css';
-import ExamWorkSpace from "./exam/ExamWorkSpace";
 import testData from './assets/json/testData.json';
-import ShowUserName from './exam/ShowUserName';
-import ScoreDisplay from './exam/ScoreDisplay';
-import Page1 from '../src/exam/ExamWorkSpace';
+import ShowUserName from './1/ShowUserName';
+import ScoreDisplay from './1/ScoreDisplay';
+import Page1 from './1/ExamWorkSpace';
 import { Route, Routes } from 'react-router-dom';
-import Page2 from '../src/Page2/ProblemForm';
+import Page3 from './3/ProblemForm';
+import Page4 from './4/FruitsSave';
+import Fruits from './4/Fruits';
+import Page2 from './2/Quiz28_1';
+
 export const ScoreContext = createContext(0);
+
 
 function App() {
 // json 파일의 문제 정보를 가져옴. ( 그리드 선 개수, 문제 이름, 문제 선 양식 등 )
 const exam = testData.examList[0];
 const [score,setScore] = useState(0);
+const [username, setUsername] = useState(''); 
 
   return (
     <ScoreContext.Provider value={{score, setScore}}>
@@ -23,6 +28,9 @@ const [score,setScore] = useState(0);
       <Routes>
         <Route path='/' element={<Page1 exam={exam}/>} />
         <Route path='/page2' element={<Page2 />} />
+        <Route path='/page3' element={<Page3 />} />
+        <Route path='/Fruits' element={<Fruits/>} />
+        <Route path='/page4' element={<Page4 />} />
       </Routes>
       </div>
     </div>
