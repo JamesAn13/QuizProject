@@ -44,7 +44,7 @@ const Quiz28_1 = () => {
         } else {
             setGameOver(true);
             setScore(foundWords.length * 10);
-            setUserScore(User_Score + foundWords);
+            setUserScore(User_Score + foundWords.length * 10);
 
         }
     }, [timer, foundWords]);

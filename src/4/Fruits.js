@@ -164,8 +164,7 @@ function Fruits(props) {
       </section>
       <footer style={{ backgroundColor: '#f8f8f8', padding: '10px', marginTop: '20px' }}>
         <Link to={'/page3'} className="link-button">이전 문제</Link>
-        <Link to={'/'}  className="link-button" >첫 문제로 돌아가기
-</Link>
+        <Link to={'/'}  className="link-button" >첫 문제로 돌아가기</Link>
 
       </footer>
     </div>
