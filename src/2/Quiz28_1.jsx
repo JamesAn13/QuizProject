@@ -73,7 +73,7 @@ const Quiz28_1 = () => {
 
     return (
         <div className="Quiz28">
-            <h1>단어 찾기 퀴즈</h1>
+            <h1>단어 찾기 퀴즈!</h1>
             <div className="timer">
                 {gameOver ? (
                     <div>
