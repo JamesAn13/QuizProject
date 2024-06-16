@@ -14,8 +14,8 @@ export const ScoreContext = createContext(0);
 
 
 function App() {
-// json 파일의 문제 정보를 가져옴. ( 그리드 선 개수, 문제 이름, 문제 선 양식 등 )
-const exam = testData.examList[0];
+
+  const exam = testData.examList[0];
 const [score,setScore] = useState(0);
 const [username, setUsername] = useState(''); 
 
