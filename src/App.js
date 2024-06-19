@@ -15,7 +15,7 @@ export const ScoreContext = createContext(0);
 
 function App() {
 
-  const exam = testData.examList[0];
+const exam = testData.examList[0];
 const [score,setScore] = useState(0);
 const [username, setUsername] = useState(''); 
 

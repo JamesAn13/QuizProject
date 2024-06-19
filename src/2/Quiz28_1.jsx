@@ -24,18 +24,17 @@ const initialGrid = [
 
 const Quiz28_1 = () => {
     const {score: User_Score ,setScore: setUserScore} = useContext(ScoreContext);
-    const [grid] = useState(initialGrid); // 그리드 관리
-    const [foundWords, setFoundWords] = useState([]); // 찾은 단어 저장
-    const [selectedCells, setSelectedCells] = useState([]); // 선택한 cell
-    const [matchedWord, setMatchedWord] = useState(null); // 선택한 단어가 있을 때 -> 단어 저장
-    const [timer, setTimer] = useState(60); // 타이머 상태
-    const [gameOver, setGameOver] = useState(false); // 게임 종료 상태
-    const [score, setScore] = useState(0); // 점수 상태
+    const [grid] = useState(initialGrid); 
+    const [foundWords, setFoundWords] = useState([]); 
+    const [selectedCells, setSelectedCells] = useState([]); 
+    const [matchedWord, setMatchedWord] = useState(null); 
+    const [timer, setTimer] = useState(60); 
+    const [gameOver, setGameOver] = useState(false); 
+    const [score, setScore] = useState(0); 
 
-    // Timer countdown
+    
     useEffect(() => {
-        //1초마다 초기상태(timer) = 60에서 -1 => timer -1
-        // 게임 종료 => 점수 = 찾은 단어수 * 2
+        
         if (timer > 0) {
             const countdown = setInterval(() => {
                 setTimer(timer - 1);
@@ -49,7 +48,6 @@ const Quiz28_1 = () => {
         }
     }, [timer, foundWords]);
 
-    // cell을 눌렀을 때 선택한 셀 => selectedCells, MatchedWord 저장
     const handleMouseDown = (rowIndex, colIndex) => {
         setSelectedCells([[rowIndex, colIndex]]);
         setMatchedWord(null);
